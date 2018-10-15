@@ -26,7 +26,8 @@ class Application
       added_item = req.params['item']
 
       if @@item.include?(added_item)
-      @@items << added_item
+      else 
+        @@items << added_item
 
     else
       resp.write "Path Not Found"
