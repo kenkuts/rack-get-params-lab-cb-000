@@ -1,6 +1,5 @@
 class Application
 
-  @@items = ["Apples","Carrots","Pears"]
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
@@ -31,7 +30,7 @@ class Application
       else
         resp.write "We don't have that item"
       end
-      
+
     else
       resp.write "Path Not Found"
     end
