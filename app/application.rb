@@ -24,7 +24,6 @@ class Application
 
     elsif req.path.match(/add/)
       added_item = req.params['item']
-
       @@items << added_item
 
     else
