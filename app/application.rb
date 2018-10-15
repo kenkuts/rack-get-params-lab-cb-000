@@ -29,7 +29,7 @@ class Application
         resp.write "added #{added_item}"
         @@cart << added_item
       else
-        @@items << added_item
+        resp.write "We don't have that item"
 
     else
       resp.write "Path Not Found"
