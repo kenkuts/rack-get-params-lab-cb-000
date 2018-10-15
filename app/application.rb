@@ -24,6 +24,8 @@ class Application
 
     elsif req.path.match(/add/)
       added_item = req.params['item']
+
+      if @@item.include?()
       @@items << added_item
 
     else
